@@ -1,0 +1,144 @@
+:root {
+  --color-gold: #f9c74f;
+  --color-gray: #adb5bd;
+  --color-black: #222222;
+  --font-main: 'Roboto', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------Boody------*/
+body {
+  font-family: var(--font-main);
+  background-color: #f9f9f9;
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-black);
+  color: var(--color-gold);
+  padding: 1rem 2rem;
+}
+
+.site-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.site-header .logo a {
+  text-decoration: none;
+  color: var(--color-gold);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.site-header .logo img {
+    display: block;
+    max-width: 100px;
+    background-color: var(--color-gray);
+    border-radius: 100px;
+    margin-right: 1rem;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  color: var(--color-gray);
+  transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+  color: var(--color-gold);
+}
+
+/* Main */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main h2 {
+  margin-bottom: 0.5rem;
+  color: var(--color-black);
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--color-black);
+  color: var(--color-gray);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.site-footer p {
+  margin: 0.5rem 0;
+  color: var(--color-gold);
+}
+
+/* Botones */
+button {
+  background: var(--color-gold);
+  color: var(--color-black);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: var(--color-gray);
+  color: var(--color-black);
+}
+
+/* Inputs */
+input, select {
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
