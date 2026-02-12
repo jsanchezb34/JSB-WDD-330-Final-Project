@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   header.innerHTML = `
     <div class="logo">
-      <img src="../src/public/images/logo1.png" alt="logo" />
+      <img src="src/public/images/logo1.png" alt="logo" />
       <a href="../index.html">JSB Final Project</a>
     </div>
     <nav>
