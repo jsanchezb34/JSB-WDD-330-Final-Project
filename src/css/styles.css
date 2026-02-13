@@ -30,6 +30,15 @@ body {
   padding: 1rem 2rem;
 }
 
+.hamburger { 
+  display: none;
+  font-size: 1.5rem; 
+  background: none;
+  border: none;
+  color: #f9c74f;
+  cursor: pointer;
+  }
+
 .site-header .logo {
     display: flex;
     align-items: center;
